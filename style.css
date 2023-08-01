@@ -143,14 +143,16 @@ span.icon-b3 svg{
 .play-bar{
     position: fixed;
     width: 100vw;
-    height: 7rem;
-    bottom: 0;
+    height: 5rem;
+    bottom: 15px;
     background-color:#181818;
+    padding-top: 8px;
 }
 .player{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 8px;
 }
 #div1{
     display: flex;
@@ -159,14 +161,27 @@ span.icon-b3 svg{
     width: 15rem;
 
 }
+#player-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#music-timeline{
+    width: 400px;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .notification-bar{
+    position: fixed;
+    bottom: 0;
     width: 100vw;
-    height: 1.875rem;
+    height: 15px;
     background-color: #1ED760;
     color: #000;
-    font-size: 1.0625rem;
-    font-style: normal;
-    font-weight: 700;
+    font-size: 13px;
     line-height: normal;
     display: flex;
     align-items: center;
