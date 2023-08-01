@@ -8,4 +8,26 @@
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, #222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0.00) 100%);
+    display: flex;
+    overflow: hidden;
+}
+.sidebar{
+    width: 371.801px;
+    /* height: 982px; */
+    flex-shrink: 0;
+    background-color: black;
+}
+.main-content{
+    width: 1457.1px;
+    /* height: 1115.885px; */
+    flex-shrink: 0;
+    /* background-color: red; */
+    overflow-y: auto;
+}
+.play-bar{
+    position: fixed;
+    width: 107.94375rem;
+    height: 7rem;
+    bottom: 0;
+    background-color: pink;
 }
