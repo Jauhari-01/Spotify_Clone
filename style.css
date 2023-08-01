@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=DM+Sans:opsz,wght@9..40,700&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    color: #FFF;
 }
 
 
@@ -11,11 +17,120 @@
     display: flex;
     overflow: hidden;
 }
+
+/* Sidebaar related css */
 .sidebar{
-    width: 371.801px;
-    /* height: 982px; */
-    flex-shrink: 0;
+    width: 300px;
+    height: 90vh;
     background-color: black;
+    text-align: justify;
+    margin-right: 1rem;
+    overflow-y: auto;
+    position: fixed;
+}
+.website-logo img{
+    margin-top: 2rem;
+    margin-left: 2.1rem;
+    width: 12.661rem;
+    height: 3.78288rem;
+}
+.section-a{
+    width: 13.12419rem;
+    height: 10.03619rem;
+    margin-left: 2.7rem;
+    margin-top: 2.7rem;
+    margin-right: 0.7rem;
+}
+.section-a-element{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.section-b{
+    width: 13.12419rem;
+    height: 10.03619rem;
+    margin-left: 2.7rem;
+    margin-top: 2.7rem;
+    margin-right: 0.7rem;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.06231rem;
+}
+.content-a{
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.07125rem;
+    width: 7.64294rem;
+    height: 1.93006rem;
+    display: inline-block;
+}
+.icon-a{
+    display: inline-block;
+    width: 1.85281rem;
+    height: 2.00725rem;
+    margin-right: 1.7rem;
+}
+.icon-b1{
+    background-image: url('./assets/Rectangle\ 9.png');
+    width: 2.31606rem;
+    height: 2.31606rem;
+    position: relative;
+}
+.icon-b2{
+    background-image: url('./assets/Rectangle\ 2.png');
+    width: 2.31606rem;
+    height: 2.31606rem;
+    position: relative;
+}
+.icon-b3{
+    background-image: url('./assets/Rectangle\ 10.png');
+    width: 2.31606rem;
+    height: 2.31606rem;
+    position: relative;
+}
+span.icon-b2 svg{
+    position: absolute;
+    top: 34%;
+    left: 35%;
+}
+span.icon-b1 svg{
+    position: absolute;
+    top: 11%;
+    left: 5%;
+}
+span.icon-b3 svg{
+    position: absolute;
+    top: 29%;
+    left: 24%;
+}
+
+.extra-section{
+    display: flex;
+    flex-direction: column;
+    width: 13.35581rem;
+    height: 17.37031rem;
+    margin-left: 2.7rem;
+    margin-top: 2.7rem;
+    gap: 1.16rem;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.06231rem;
+}
+.sidebar span:hover{
+    background-color: rgba(40, 40, 40, 1);
+}
+.install-icon-section{
+    margin-bottom: 5rem;
+    flex-direction: row;
+    height: fit-content;
 }
 .main-content{
     width: 1457.1px;
@@ -23,11 +138,40 @@
     flex-shrink: 0;
     /* background-color: red; */
     overflow-y: auto;
+    border: 2px solid blue;
 }
 .play-bar{
     position: fixed;
-    width: 107.94375rem;
+    width: 100vw;
     height: 7rem;
     bottom: 0;
-    background-color: pink;
+    background-color:#181818;
+}
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#div1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15rem;
+
+}
+.notification-bar{
+    width: 100vw;
+    height: 1.875rem;
+    background-color: #1ED760;
+    color: #000;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.notification-bar h4{
+    padding-right: 2rem;
 }
