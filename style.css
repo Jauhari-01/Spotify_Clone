@@ -132,14 +132,30 @@ span.icon-b3 svg{
     flex-direction: row;
     height: fit-content;
 }
+
+
 .main-content{
-    width: 1457.1px;
-    /* height: 1115.885px; */
+    width: 78vw;
+    position: fixed;
+    right: 0;
+    height: 1115.885px;
     flex-shrink: 0;
-    /* background-color: red; */
+    background-color: red;
     overflow-y: auto;
-    border: 2px solid blue;
 }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76%;
+    background-color: #282626;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+}
+
+
 .play-bar{
     position: fixed;
     width: 100vw;
