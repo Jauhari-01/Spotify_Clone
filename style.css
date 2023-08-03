@@ -138,9 +138,9 @@ span.icon-b3 svg{
     width: 78vw;
     position: fixed;
     right: 0;
-    height: 1115.885px;
+    height: 90vh;
     flex-shrink: 0;
-    background-color: red;
+    /* background-color: red; */
     overflow-y: auto;
 }
 
@@ -212,6 +212,49 @@ span.icon-b3 svg{
     letter-spacing: -1.14px;
 }
 
+
+/* Playlist grid */
+#playlistGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+    margin-top: 0.4rem;
+    margin-left: 3rem;
+    width: 83%;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+#playlistGrid .playlist-grid-card {
+    padding: 13px;
+    width: 200px;
+    height: 280px;
+    background-color: #282828;
+    /* border-radius: 14px; */
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#playlistGrid .playlist-grid-card img {
+    width: 100%;
+    height: auto;
+}
+
+#playlistGrid .playlist-grid-card .title {
+    /* Add some styling for the title here */
+    margin-top: 1rem;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+#playlistGrid .playlist-grid-card .creator {
+    color: rgba(179, 179, 179, 1);
+    font-size: 15px;
+}
+
 /* Bottom section */
 .play-bar{
     position: fixed;
@@ -232,7 +275,6 @@ span.icon-b3 svg{
     justify-content: space-evenly;
     align-items: center;
     width: 15rem;
-
 }
 #player-icons{
     display: flex;
