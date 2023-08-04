@@ -124,7 +124,7 @@ span.icon-b3 svg{
     line-height: normal;
     letter-spacing: -0.06231rem;
 }
-.sidebar span:hover{
+.sidebar .hoverEffect:hover{
     background-color: rgba(40, 40, 40, 1);
 }
 .install-icon-section{
@@ -432,20 +432,51 @@ span.icon-b3 svg{
 
 /* Medium screens */
 @media (min-width: 768px) and (max-width: 1199px) {
-    #playlistGrid,
-    #browseSection .genreGrid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .website-logo img{
+        margin-top: 2rem;
+        margin-left: 2.1rem;
+        width: 6.661rem;
+        height: auto;
     }
-
-    #playlistDetail .header img {
-        width: 200px;
-        height: 200px;
+    .section-a{
+        width: 12rem;
+        height: 8rem;
+        margin-left: 2.7rem;
+        margin-top: 2.7rem;
+        margin-right: 0.7rem;
     }
-    .sidebar{
-        width: 15vw;
-        font-size: 10px !important;
+    .section-a-element{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
     }
-    p{
+    .section-b{
+        width: 12rem;
+        height: 8rem;
+        margin-left: 2.7rem;
+        margin-top: 2.7rem;
+        margin-right: 0.7rem;
+        font-size: 15px;
+        font-style: normal;
+    }
+    .content-a{
+        font-size: 15px;
+        font-style: normal;
+        display: inline-block;}
+    
+    .extra-section{
+        display: flex;
+        flex-direction: column;
+        width: 12rem;
+        height: 8rem;
+        margin-left: 2.7rem;
+        margin-top: 2.7rem;
+        gap: 1.16rem;
+        font-size: 15px;
+        line-height: normal;
+        letter-spacing: -0.06231rem;
+    }
+    .install-icon-section svg{
         display: none;
     }
 }
