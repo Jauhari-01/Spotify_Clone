@@ -20,7 +20,7 @@ body{
 
 /* Sidebaar related css */
 .sidebar{
-    width: 300px;
+    width: 20vw;
     height: 90vh;
     background-color: black;
     text-align: justify;
@@ -135,7 +135,7 @@ span.icon-b3 svg{
 
 
 .main-content{
-    width: 78vw;
+    width: 80vw;
     position: fixed;
     right: 0;
     height: 90vh;
@@ -148,11 +148,13 @@ span.icon-b3 svg{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 76%;
     background-color: #282626;
     padding: 16px;
     position: fixed;
     top: 0;
+    z-index: 1000;
+    width: 77.6vw;
+    right: 0;
 }
 
 /* feactured section */
@@ -166,14 +168,12 @@ span.icon-b3 svg{
     letter-spacing: -1.14px;
 }
 #featured {
-    width: 85%;
+    width: 86%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     padding: 20px;
     background-color: #121212;
     color: white;
-    border: 5px solid blue;
     margin-top: 0.4rem;
     margin-left: 3rem;
 }
@@ -255,6 +255,108 @@ span.icon-b3 svg{
     font-size: 15px;
 }
 
+/* Playlist details section */
+#playlistDetail {
+    padding: 20px;
+    /* background-color: #121212; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#playlistDetail .header {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+
+#playlistDetail .header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#playlistDetail .header .info {
+    /* Add some styling for the playlist title, description, and other info here */
+}
+
+#playlistDetail .tracklist {
+    margin-top: 40px;
+    /* Add some styling for the tracklist here */
+}
+/* Middle icons */
+.middle-icons{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+.middle-line-section{
+    padding-left: 6.5rem;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Circular Std;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.32px;
+    opacity:0.7;
+    position: relative;
+}
+.line{
+    width: 100vw;
+    height: 1px;
+    background-color: white;
+    right: 0;
+    position: absolute;
+}
+
+/* Browse section */
+#browseSection {
+    padding: 20px;
+    /* background-color: #121212; */
+    margin-bottom: 5rem;
+}
+
+#browseSection .genreGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#browseSection .genreCard {
+    background-color: #282828;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playlist-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 26px;
+    font-size: 10px;
+    padding: 10px;
+}
+
+#browseSection .genreCard img {
+    width: 36%;
+    height: auto;
+}
+.last-part{
+    display: flex;
+    width: 106px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
 /* Bottom section */
 .play-bar{
     position: fixed;
@@ -317,3 +419,51 @@ span.icon-b3 svg{
 ::-webkit-scrollbar-thumb{
     background-color: #black;
 } */
+
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .navbar{
+        width: 77vw;
+    }
+
+   
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #playlistGrid,
+    #browseSection .genreGrid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #playlistDetail .header img {
+        width: 200px;
+        height: 200px;
+    }
+    .sidebar{
+        width: 15vw;
+        font-size: 10px !important;
+    }
+    p{
+        display: none;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    
+    #playlistGrid,
+    #browseSection .genreGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #playlistDetail .header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #playlistDetail .header img {
+        width: 100%;
+    }
+}
